@@ -1,0 +1,124 @@
+img {
+  vertical-align: middle;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#topbar {
+  height: 40px;
+  background-color: #006699;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 5px 10px #999;
+  z-index: 999;
+}
+#topbar > h4 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+}
+#topbar > a.fa-search {
+  position: absolute;
+  right: 10px;
+  color: #fff;
+  top: 10px;
+}
+#footer {
+  height: 50px;
+  background-color: #006699;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
+#footer > .mui-row div > a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 12px;
+}
+#footer > .mui-row div > a::before {
+  display: block;
+}
+#footer > .mui-row div > a.active {
+  color: orange;
+}
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+#main {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#topbar > a.fa-arrow-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+#main .searchbar {
+  padding: 10px;
+}
+#main .searchbar > form {
+  float: left;
+}
+#main .searchbar > form > input {
+  height: 33px;
+  width: 286px;
+  border-radius: 5px 0 0 5px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+#main .searchbar > button {
+  float: left;
+  background-color: #006699;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+}
+#main .search-title {
+  padding: 10px;
+}
+#main .search-title > span {
+  float: left;
+  font-size: 14px;
+  color: #666;
+}
+#main .search-title > a {
+  float: right;
+  font-size: 14px;
+  color: #666;
+}
+#main .search-content {
+  padding: 10px;
+}
+#main .search-content ul {
+  border: 1px solid #ccc;
+}
+#main .search-content ul li {
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #666;
+}
+#main .search-content ul li + li {
+  border-top: 1px solid #ccc;
+}
+#main .search-content ul li > a {
+  float: right;
+  margin-top: 8px;
+  color: #666;
+}

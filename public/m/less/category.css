@@ -1,0 +1,126 @@
+img {
+  vertical-align: middle;
+}
+#topbar {
+  height: 40px;
+  background-color: #006699;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 5px 10px #999;
+  z-index: 999;
+}
+#topbar > h4 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+}
+#topbar > a.fa-search {
+  position: absolute;
+  right: 10px;
+  color: #fff;
+  top: 10px;
+}
+#footer {
+  height: 50px;
+  background-color: #006699;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
+#footer > .mui-row div > a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 12px;
+}
+#footer > .mui-row div > a::before {
+  display: block;
+}
+#footer > .mui-row div > a.active {
+  color: orange;
+}
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+#main {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#topbar > a.fa-arrow-left {
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  color: #fff;
+}
+#topbar > form {
+  position: relative;
+  top: 5px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+#topbar > form > input {
+  height: 30px;
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+#category-left {
+  float: left;
+  width: 80px;
+  height: 100%;
+  background-color: #006699;
+}
+#category-left > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#category-left > ul li {
+  height: 50px;
+  line-height: 50px;
+  background-color: #006699;
+}
+#category-left > ul li.active {
+  background-color: #fff;
+}
+#category-left > ul li.active > a {
+  color: #000;
+}
+#category-left > ul li > a {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+#category-right {
+  overflow: hidden;
+  padding: 10px;
+  width: auto;
+  height: 100%;
+  position: relative;
+}
+#category-right .mui-scroll {
+  position: relative;
+  height: 101%;
+}
+#category-right .mui-row {
+  height: 100%;
+}
+#category-right .mui-row > a > img {
+  width: 100%;
+}
+#category-right .mui-row > a > p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 0;
+}

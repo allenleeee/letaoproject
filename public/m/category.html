@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet/less" href="./less/category.less">
+    <script src="./lib/less/less.js"></script>
+    <title>乐淘-分类</title>
+</head>
+
+<body>
+    <!-- 顶部通栏 -->
+    <header id="topbar">
+        <a href="#" class="fa fa-arrow-left"></a>
+        <form action="">
+            <input type="text" placeholder="请输入要搜索的商品">
+        </form>
+        <a href="#" class="fa fa-search"></a>
+    </header>
+    <main id="main">
+        <!-- 左边部分 -->
+        <section id="category-left">
+            <ul>
+                <!-- <li class="active">
+                                <a href="#">运动馆</a>
+                            </li>
+                            <li>
+                                <a href="#">男士馆</a>
+                            </li>
+                            <li>
+                                <a href="#">女士馆</a>
+                            </li>
+                            <li>
+                                <a href="#">帆布馆</a>
+                            </li> -->
+            </ul>
+        </section>
+        <!-- 右边部分 -->
+        <section id="category-right" class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="mui-row">
+                    <!-- <a href="#" class="mui-col-xs-4">
+                        <img src="./images/brand1.png" alt="">
+                        <p>阿迪达斯</p>
+                    </a>
+                    <a href="#" class="mui-col-xs-4">
+                        <img src="./images/brand2.png" alt="">
+                        <p>阿迪达斯</p>
+                    </a>
+                    <a href="#" class="mui-col-xs-4">
+                        <img src="./images/brand3.png" alt="">
+                        <p>阿迪达斯</p>
+                    </a>
+                    <a href="#" class="mui-col-xs-4">
+                        <img src="./images/brand4.png" alt="">
+                        <p>阿迪达斯</p>
+                    </a>
+                    <a href="#" class="mui-col-xs-4">
+                        <img src="./images/brand5.png" alt="">
+                        <p>阿迪达斯</p>
+                    </a>
+                    <a href="#" class="mui-col-xs-4">
+                        <img src="./images/brand6.png" alt="">
+                        <p>阿迪达斯</p>
+                    </a> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部通栏 -->
+    <footer id="footer">
+        <div class="mui-row">
+            <div class="mui-col-xs-3">
+                <a href="./index.html" class=" fa fa-home">
+                    首页
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="./category.html" class="fa fa-bars active">
+                    分类
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="#" class="fa fa-shopping-cart">
+                    购物车
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="#" class=" fa fa-user">
+                    个人中心
+                </a>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./js/category.js"></script>
+
+    <!-- 左侧栏模板 -->
+    <script type="text/html" id="cate-left">
+        {{each rows}}
+        <li data-id="{{$value.id}}">
+            <a href="#">{{$value.categoryName}}</a>
+        </li>
+        {{/each}}
+    </script>
+    <!-- 右侧模板 -->
+    <script type="text/html" id="cate-right">
+        {{each rows}}
+        <a href="#" class="mui-col-xs-4">
+            <img src="{{$value.brandLogo}}" alt="">
+            <p>{{$value.brandName}}</p>
+        </a>
+        {{/each}}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+@import './base.less';
+
+#topbar{
+    >a.fa-arrow-left{
+        position: absolute;
+        top:10px;
+        left:10px;
+        font-size: 16px;
+        color: #fff;
+    }
+}
+
+// 搜索框
+#main{
+    .searchbar{
+        padding: 10px;
+        >form{
+            float: left;
+            >input{
+            height: 33px;
+            width: 286px;
+            border-radius: 5px 0 0 5px;
+            font-size: 14px;
+            margin-bottom: 0;            
+            }
+        }
+        >button{
+            float: left;
+            background-color: @main-color;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+        }
+    }
+    .search-title{
+        padding:10px;
+        >span{
+            float: left;
+            font-size: 14px;
+            color: #666;
+        }
+        >a{
+            float: right;
+            font-size: 14px;
+            color: #666;            
+        }
+    }
+    .search-content{
+        padding: 10px;
+        ul{
+            border:1px solid #ccc;
+            li{
+                height: 30px;
+                line-height: 30px;
+                position: relative;
+                padding:0 10px;
+                font-size: 14px;
+                color: #666;
+                &+li{
+                    border-top: 1px solid #ccc;                    
+                }
+                >a{
+                    float: right;
+                    margin-top:8px;
+                    color: #666;
+                }
+            }
+        }
+
+    }
+}

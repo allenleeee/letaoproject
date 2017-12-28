@@ -1,0 +1,130 @@
+img {
+  vertical-align: middle;
+}
+#topbar {
+  height: 40px;
+  background-color: #006699;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 5px 10px #999;
+  z-index: 999;
+}
+#topbar > h4 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+}
+#topbar > a.fa {
+  position: absolute;
+  right: 10px;
+  color: #fff;
+  top: 10px;
+}
+#footer {
+  height: 50px;
+  background-color: #006699;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
+#footer > .mui-row div > a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 12px;
+}
+#footer > .mui-row div > a::before {
+  display: block;
+}
+#footer > .mui-row div > a.active {
+  color: orange;
+}
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+#main {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  height: 100%;
+  overflow: hidden;
+}
+#nav {
+  width: 100%;
+  padding: 10px;
+}
+#nav > .mui-row > div a {
+  display: block;
+}
+#nav > .mui-row > div a > img {
+  width: 100%;
+}
+#ad {
+  padding: 10px;
+}
+#ad > .mui-row img {
+  width: 100%;
+}
+#ad > .mui-row > div > .mui-row > div:nth-child(3) {
+  margin-top: 5px;
+}
+#ad > .mui-row > div > .mui-row > div:nth-child(4) {
+  margin-top: 5px;
+}
+#brand {
+  padding: 10px;
+}
+#brand > .brand-title > a > img {
+  width: 100%;
+}
+#brand > .brand-content > .mui-row > a > img {
+  width: 100%;
+}
+#sport,
+#man,
+#women {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+#sport img,
+#man img,
+#women img {
+  width: 100%;
+}
+#sport p,
+#man p,
+#women p {
+  margin-bottom: 0;
+}
+#sport > .mui-row > div,
+#man > .mui-row > div,
+#women > .mui-row > div {
+  margin-bottom: 10px;
+}
+#sport > .mui-row > div p.product-title,
+#man > .mui-row > div p.product-title,
+#women > .mui-row > div p.product-title {
+  text-align: center;
+}
+#sport > .mui-row > div p.product-price,
+#man > .mui-row > div p.product-price,
+#women > .mui-row > div p.product-price {
+  text-align: center;
+}
+#sport > .mui-row > div p.product-price > span,
+#man > .mui-row > div p.product-price > span,
+#women > .mui-row > div p.product-price > span {
+  color: orangered;
+}
+#sport > .mui-row > div button,
+#man > .mui-row > div button,
+#women > .mui-row > div button {
+  display: block;
+  margin: 0 auto;
+}

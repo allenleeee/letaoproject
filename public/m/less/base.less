@@ -1,0 +1,76 @@
+// 公共样式
+@main-color:#006699;
+
+img{
+    vertical-align: middle;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+// 头部公共样式
+#topbar{
+    height: 40px;
+    background-color: @main-color;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 5px 10px #999;
+    z-index: 999;
+    >h4{
+        padding: 0;
+        margin: 0;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        font-weight: 500;
+    }
+    >a.fa-search{
+        position: absolute;
+        right:10px;
+        color: #fff;
+        top:10px;
+    }
+}
+
+// 底部公共样式
+#footer{
+    height: 50px;
+    background-color: @main-color;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    >.mui-row{
+        div{
+            >a{
+                display: block;
+                color: #fff;
+                font-size: 14px;
+                text-align: center;
+                padding-top: 12px;
+                &::before{
+                    display: block;
+                }
+                &.active{
+                    color: orange;
+                }
+            }
+
+        }
+    }
+}
+
+// 主体部分公共样式
+html,body{
+    height: 100%;
+    background-color: #fff;
+}
+#main{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
